@@ -1,0 +1,42 @@
+/* Universal reset */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  font-family: 'Inter', sans-serif; /* Apply font globally */
+}
+
+/* Custom dashed border for file upload area */
+.border-dashed {
+  border-style: dashed !important;
+}
+
+/* Custom spinner color if needed */
+.spinner-border {
+  color: white;
+}
+
+/* Custom cursor for label */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Override Bootstrap's default container-fluid padding for main content and footer */
+/* This ensures they stretch truly edge-to-edge */
+main.container-fluid,
+footer .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Add some internal padding to cards if they now touch edges too much */
+/* This will add back some spacing inside the cards themselves */
+.card {
+  padding-left: rem !important;
+  padding-right: 1.5rem !important;
+}
